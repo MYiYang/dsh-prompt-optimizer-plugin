@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Prompt optimizer">
+  <defs>
+    <linearGradient id="dpo-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f8f7a"/>
+      <stop offset="1" stop-color="#1d5f86"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#dpo-bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 15.5l3.1 7.4L36.5 26l-7.4 3.1L26 36.5l-3.1-7.4L15.5 26l7.4-3.1z" fill="#ffffff" stroke="none"/>
+    <path d="M43 34l2 4.8 4.8 2-4.8 2-2 4.8-2-4.8-4.8-2 4.8-2z" fill="#ffffff" stroke="none"/>
+    <path d="M35.5 20.5l11 11"/>
+  </g>
+  <rect x="16" y="45" width="22" height="3.4" rx="1.7" fill="#ffffff" opacity="0.75"/>
+</svg>

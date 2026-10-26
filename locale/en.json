@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt Optimizer",
+    "description": "Adds an Optimize button to the composer that rewrites the prompt you typed into a clearer, more complete request without changing what you asked for."
+  }
+}

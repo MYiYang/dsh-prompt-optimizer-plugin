@@ -1,0 +1,65 @@
+{
+  "name": "dsh-prompt-optimizer-plugin",
+  "version": "0.1.0",
+  "description": "Adds one icon button to the DSH composer that rewrites the prompt you typed into a clearer, more complete request without changing what you asked for.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "optimize.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "author": "杨慕义 <1791500400@qq.com>",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "plugin",
+    "prompt",
+    "prompt-engineering",
+    "composer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MYiYang/dsh-prompt-optimizer-plugin.git"
+  },
+  "homepage": "https://github.com/MYiYang/dsh-prompt-optimizer-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/MYiYang/dsh-prompt-optimizer-plugin/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/optimize.test.js test/route.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

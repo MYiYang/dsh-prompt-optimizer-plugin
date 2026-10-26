@@ -1,0 +1,22 @@
+# dsh-prompt-optimizer-plugin bundle patch.
+#
+# Mounts the package's Host half (the trust-fenced /prompt-optimizer/api route
+# that rewrites one draft with the profile's model) as one Loader row. The
+# package's `dsh.client` declaration makes the Web carrier serve client.js; the
+# bundle patch itself needs no extra row for the button.
+#
+# Optional settings, all of them overridable from the profile's own patch layer:
+#
+#   - id: prompt-optimizer
+#     name: 'dsh-prompt-optimizer-plugin'
+#     config:
+#       provider: workbuddy          # default: the profile's default model
+#       model: deepseek-v4.1-flash
+#       mode: balanced               # balanced | concise | detailed
+#       maxTokens: 2048
+#       timeoutMs: 90000
+#       maxInputChars: 12000
+#       temperature: 0.3             # omitted by default (provider default)
+- insert:
+    - id: prompt-optimizer
+      name: 'dsh-prompt-optimizer-plugin'
