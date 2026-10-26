@@ -1,5 +1,8 @@
 # dsh-prompt-optimizer-plugin
 
+[![npm version](https://img.shields.io/npm/v/dsh-prompt-optimizer-plugin.svg)](https://www.npmjs.com/package/dsh-prompt-optimizer-plugin)
+[![license](https://img.shields.io/npm/l/dsh-prompt-optimizer-plugin.svg)](LICENSE)
+
 A DSH Web plugin that puts one **Optimize** button in the session composer. It
 takes the prompt you already typed, has the profile's model rewrite it into a
 clearer and more complete request, and puts the result back into the input box —
